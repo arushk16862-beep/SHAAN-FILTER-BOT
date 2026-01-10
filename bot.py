@@ -1,7 +1,6 @@
 import logging
 import logging.config
-pyroutils.MIN_CHAT_ID = -999999999999
-pyroutils.MIN_CHANNEL_ID = -100999999999999
+
 # Get logging configurations
 logging.config.fileConfig('logging.conf')
 logging.getLogger().setLevel(logging.INFO)
@@ -19,6 +18,11 @@ from pyrogram import types
 from Script import script 
 from datetime import date, datetime 
 import pytz
+
+# peer id invaild fixxx
+from pyrogram import utils as pyroutils
+pyroutils.MIN_CHAT_ID = -999999999999
+pyroutils.MIN_CHANNEL_ID = -100999999999999
 
 import pyromod.listen
 import time, os
