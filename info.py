@@ -66,11 +66,11 @@ DELETE_CHANNELS = [int(dch) if id_pattern.search(dch) else dch for dch in enviro
 MAX_B_TN = environ.get("MAX_B_TN", "7")
 MAX_BTN = is_enabled((environ.get('MAX_BTN', "True")), True)
 PORT = environ.get("PORT", "8080")
-GRP_LNK = environ.get('GRP_LNK', 'https://t.me/DigitalSearchMovie')
-CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/DigitalSearchMovie')
+GRP_LNK = environ.get('GRP_LNK', 'https://t.me/cinemacompanu')
+CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/cinemacompanu')
 MSG_ALRT = environ.get('MSG_ALRT', 'Wʜᴀᴛ Aʀᴇ Yᴏᴜ Lᴏᴏᴋɪɴɢ Aᴛ ?')
 LOG_CHANNEL = int(environ.get('LOG_CHANNEL', -1001902255762))
-SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'Apnamovie4')
+SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'cinemacompanu')
 P_TTI_SHOW_OFF = is_enabled((environ.get('P_TTI_SHOW_OFF', "False")), False)
 IMDB = is_enabled((environ.get('IMDB', "True")), True)
 AUTO_FFILTER = is_enabled((environ.get('AUTO_FFILTER', "True")), True)
@@ -89,7 +89,7 @@ PROTECT_CONTENT = is_enabled((environ.get('PROTECT_CONTENT', "False")), False)
 PUBLIC_FILE_STORE = is_enabled((environ.get('PUBLIC_FILE_STORE', "True")), True)
 
 # Streaming
-BIN_CHANNEL = environ.get("BIN_CHANNEL", "-1001902255762")
+BIN_CHANNEL = environ.get("BIN_CHANNEL", "-1002375298448")
 if len(BIN_CHANNEL) == 0:
     logging.error('BIN_CHANNEL is missing, exiting now')
     exit()
