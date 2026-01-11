@@ -1,6 +1,14 @@
-import json
+from telethon import events, Button
+
+# If your main file is bot.py, you usually import the client from there
+# Or ensure you aren't calling client() as a function
+from bot import client import json
 import os
-from telethon import TelegramClient, events, Button, functions, errors
+from telethon import TelegramClient, events, Button, functions, error
+@client.on(events.NewMessage(pattern='/setchat1'))
+async def set_chat_1(event):
+    # Your code here
+    await event.respond("Success")
 
 # --- CONFIGURATION ---
 API_ID = 1234567          
