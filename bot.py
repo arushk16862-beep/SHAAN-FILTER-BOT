@@ -7,10 +7,9 @@ logging.getLogger().setLevel(logging.INFO)
 logging.getLogger("pyrogram").setLevel(logging.ERROR)
 logging.getLogger("imdbpy").setLevel(logging.ERROR)
 logging.getLogger("cinemagoer").setLevel(logging.ERROR)
-logging.getLogger("telethon").setLevel(logging.ERROR)
+logging.getLogger("telethon").setLevel(logging.INFO)
 
 
-from telethon import events, Button
 from pyrogram import Client, __version__
 from pyrogram.raw.all import layer
 from database.ia_filterdb import Media
@@ -122,4 +121,5 @@ class Bot(Client):
 
 
 app = Bot()
-app.run()
+if __name__ == "__main__":
+    app.run()
