@@ -11,14 +11,7 @@ from telethon import events, Button
 
 # If your main file is bot.py, you usually import the client from there
 # Or ensure you aren't calling client() as a function
-from bot import client 
-
-@client.on(events.NewMessage(pattern='/setchat1'))
-async def set_chat_1(event):
-    # Your code here
-    await event.respond("Success")
-
-
+from bot import Client, __version__
 from pyrogram import Client, __version__
 from pyrogram.raw.all import layer
 from database.ia_filterdb import Media
