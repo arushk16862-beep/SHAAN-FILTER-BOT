@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://graph.org/file/49ed60d0e264142342hahd.jpg" alt=JK-FILTER-BOT Logo">
+  <img src="https://files.catbox.moe/xtn2dd.jpg" alt=JK-FILTER-BOT Logo">
 </p>
 <h1 align="center">
   𝐒𝐇𝐀𝐀𝐍 𝐅𝐈𝐋𝐓𝐄𝐑 𝐁𝐎𝐓
